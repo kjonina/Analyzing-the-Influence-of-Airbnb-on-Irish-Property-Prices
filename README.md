@@ -307,10 +307,10 @@ When mapping Airbnb listings onto the SAs and grouping them by month, it was obs
 - **Duplication Data:** Duplicate entries and changing property prices over time were observed in the dataset.
 
 **Geocoding Process:**
--**Inaccurate Addresses:** Some addresses only contained general area names without property-specific details, leading to inaccuracies in geolocation.
+- **Inaccurate Addresses:** Some addresses only contained general area names without property-specific details, leading to inaccuracies in geolocation.
 
 **Shapefiles:**
-**Data Dictionary and Standardization:** Lack of data dictionaries and inconsistencies in location names and spellings in shapefiles created difficulties in data merging and analysis.
+- **Data Dictionary and Standardization:** Lack of data dictionaries and inconsistencies in location names and spellings in shapefiles created difficulties in data merging and analysis.
 
 **Tableau Dashboard:**
 - **Use of Uncleaned Data:** Some Tableau dashboards used uncleaned PPR data, potentially introducing inaccuracies into the visualizations.
