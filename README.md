@@ -8,8 +8,8 @@ Data Cleaning | Data Analysis| Exploratory Data Analysis | Data Visualization | 
 - [ABSTRACT](###ABSTRACT)
 - [Introduction](###Introduction)
 - [Problem Statement](###Problem-Statement)
-- [Methodology Summary](###Methodology-Summary)
-- [Findings](###Findings)
+- [Methodology Summary](#Methodology-Summary)
+- [Findings](#Findings)
 
 ### ABSTRACT
 Housing crisis is one of the most talked about social issues in Ireland.  Entire properties, as well as private rooms, available on Airbnb in highly touristic areas such as Dublin, contributes to a demand on the rental market for long term tenants and property markets for first-time buyers. Unaffordability in the property market has coincided with the increase of private short-term rentals (STRs) such as Airbnb in many cities around the world, including Dublin. In this study, we evaluated the impact of Airbnb on property prices since July 2021 in the Greater Dublin Area, where roughly 1.9 million people live, using linear regression and other machine learning algorithms. Findings suggests that the number of Airbnb listings has returned to the pre-pandemic high, while ML results were inconclusive due to the dataset chosen for this research and no recommendations could be made in relation to Airbnb.
