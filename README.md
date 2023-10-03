@@ -47,7 +47,7 @@ This study aims to provide insights into how Airbnb impacts property prices in I
 
 The counties in GDA. Created in Tableau Dashboard.
 
-### Methodology Summary
+# Methodology Summary
 #### Data Sources
 - Residential Property Price Register (PPR) – Information about property sales in Ireland.
 - Inside Airbnb – Data on Airbnb listings in Ireland.
