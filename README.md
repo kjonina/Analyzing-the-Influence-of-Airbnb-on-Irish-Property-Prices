@@ -11,13 +11,13 @@ Data Cleaning | Data Analysis| Exploratory Data Analysis | Data Visualization | 
 - [Methodology Summary](#Methodology-Summary)
 - [Findings](#Findings)
 
-### ABSTRACT
+# ABSTRACT
 Housing crisis is one of the most talked about social issues in Ireland.  Entire properties, as well as private rooms, available on Airbnb in highly touristic areas such as Dublin, contributes to a demand on the rental market for long term tenants and property markets for first-time buyers. Unaffordability in the property market has coincided with the increase of private short-term rentals (STRs) such as Airbnb in many cities around the world, including Dublin. In this study, we evaluated the impact of Airbnb on property prices since July 2021 in the Greater Dublin Area, where roughly 1.9 million people live, using linear regression and other machine learning algorithms. Findings suggests that the number of Airbnb listings has returned to the pre-pandemic high, while ML results were inconclusive due to the dataset chosen for this research and no recommendations could be made in relation to Airbnb.
 
-### Introduction
+# Introduction
 The housing crisis in Ireland has become a pressing issue, affecting both renters and potential homebuyers due to the unaffordability of properties in both the rental and property markets. This crisis has been exacerbated by the presence of Airbnb, a platform where individuals offer their homes or private rooms for short-term rentals to tourists. This practice has reduced the availability of long-term rental properties, leading to increased rents in high-demand areas like London, Denver, and Sydney. This study aims to investigate the impact of Airbnb on property prices in Ireland by analyzing property sales data from the Residential Property Price Register and Airbnb listings data in specific areas.
 
-### Problem Statement
+# Problem Statement
 #### Housing Crisis
 The housing crisis in Ireland is characterized by a shortage of affordable accommodations for rent or purchase. While the government has attempted to address this crisis with affordable and social housing plans, critics argue that these efforts have been insufficient and lack innovation. The study focuses on the rental market, which provides long-term accommodation, and the property market, which involves property sales, excluding commercial or industrial properties.
 After the 2007-2008 Great Financial Crisis, Irish property prices hit their lowest point but rebounded by 24.1% the following year. The property market continued to recover until late 2019, with prices rising by as much as 9% in 2022. Meanwhile, the median household income for first-time buyers increased from €71,000 in 2019 to €77,000 in 2021. Although the housing stock in Ireland grew by an average of 6% between 2016 and 2022, it failed to outpace population growth, leading to a shortage of available properties for both the rental and property markets.
@@ -209,7 +209,7 @@ Categorical variables were converted into dummy variables, creating separate col
 #### Training and Test Set
 The dataset was split into training and test sets, using various splits (70:30, 80:20, 90:10) to find the best models. The number of rows in each split varied accordingly.
 
-### Findings - Summary
+# Findings
 
 #### Exploratory Descriptive Analysis
 Property prices in Ireland saw a steady decline from 2010 until 2013, after which they started increasing. In Dublin, for example, the median property price (MPP) hit a low of €202,643 in 2012 but rose to €385,000 in 2022.
