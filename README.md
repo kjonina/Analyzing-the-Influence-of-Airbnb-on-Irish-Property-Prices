@@ -5,9 +5,9 @@ Created as part of Master of Science in Data Science in South East Technological
 Data Cleaning | Data Analysis| Exploratory Data Analysis | Data Visualization | Statistical Analysis | Machine Learning | Data Mining | Feature Engineering | Time Series Analysis
 
 ## Table of Contents
-- [ABSTRACT](###ABSTRACT)
-- [Introduction](###Introduction)
-- [Problem Statement](###Problem-Statement)
+- [ABSTRACT](#ABSTRACT)
+- [Introduction](#Introduction)
+- [Problem Statement](#Problem-Statement)
 - [Methodology Summary](#Methodology-Summary)
 - [Findings](#Findings)
 
