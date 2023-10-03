@@ -2,7 +2,7 @@
 Created as part of Master of Science in Data Science in South East Technological University, Ireland.
 
 ### SKILLS GAINED
-Data Cleaning | Data Analysis| Exploratory Data Analysis | Data Visualization | Statistical Analysis | Machine Learning | Data Mining | Feature Engineering | Time Series Analysis
+Data Cleaning | Data Analysis| Exploratory Data Analysis | Data Visualization | Statistical Analysis | Machine Learning | Data Mining | Feature Engineering
 
 ## Table of Contents
 - [ABSTRACT](#ABSTRACT)
