@@ -13,6 +13,9 @@ Data Cleaning | Data Analysis| Exploratory Data Analysis | Data Visualization | 
 - [Discussion](#Discussion)
 - [Limitations](#Limitations)
 
+- [Future Study Implications](#Future)
+- [Conclusion](#Conclusion)
+
 # ABSTRACT
 Housing crisis is one of the most talked about social issues in Ireland.  Entire properties, as well as private rooms, available on Airbnb in highly touristic areas such as Dublin, contributes to a demand on the rental market for long term tenants and property markets for first-time buyers. Unaffordability in the property market has coincided with the increase of private short-term rentals (STRs) such as Airbnb in many cities around the world, including Dublin. In this study, we evaluated the impact of Airbnb on property prices since July 2021 in the Greater Dublin Area, where roughly 1.9 million people live, using linear regression and other machine learning algorithms. Findings suggests that the number of Airbnb listings has returned to the pre-pandemic high, while ML results were inconclusive due to the dataset chosen for this research and no recommendations could be made in relation to Airbnb.
 
@@ -213,6 +216,8 @@ The dataset was split into training and test sets, using various splits (70:30, 
 
 # Findings
 
+<div class='tableauPlaceholder' id='viz1696342974059' style='position: relative'><noscript><a href='#'><img alt='Examining the Housing Property Prices and its influences ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ir&#47;IrelandPricePropertyRegisterMScThesis&#47;ExaminingtheHousingPropertyPricesanditsinfluences&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IrelandPricePropertyRegisterMScThesis&#47;ExaminingtheHousingPropertyPricesanditsinfluences' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ir&#47;IrelandPricePropertyRegisterMScThesis&#47;ExaminingtheHousingPropertyPricesanditsinfluences&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                
+
 #### Exploratory Descriptive Analysis
 Property prices in Ireland saw a steady decline from 2010 until 2013, after which they started increasing. In Dublin, for example, the median property price (MPP) hit a low of €202,643 in 2012 but rose to €385,000 in 2022.
 
@@ -293,15 +298,6 @@ When mapping Airbnb listings onto the SAs and grouping them by month, it was obs
 (Note: This section provides information about the distribution and characteristics of Small Areas in the selected counties, along with the decision to exclude Airbnb listings at this geographical level due to limited data.)
 
 
-<div class='tableauPlaceholder' id='viz1696342974059' style='position: relative'><noscript><a href='#'><img alt='Examining the Housing Property Prices and its influences ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ir&#47;IrelandPricePropertyRegisterMScThesis&#47;ExaminingtheHousingPropertyPricesanditsinfluences&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IrelandPricePropertyRegisterMScThesis&#47;ExaminingtheHousingPropertyPricesanditsinfluences' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ir&#47;IrelandPricePropertyRegisterMScThesis&#47;ExaminingtheHousingPropertyPricesanditsinfluences&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                
-```(js, embedcode)                   
- var divElement = document.getElementById('viz1696342974059');                    
- var vizElement = divElement.getElementsByTagName('object')[0];                    
- vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
- var scriptElement = document.createElement('script');                    
- scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
- vizElement.parentNode.insertBefore(scriptElement, vizElement);               
-```
 # Discussion
 - **Null Hypothesis:** The study failed to reject the null hypothesis, indicating no significant impact of Airbnb on property prices in the selected GDA region.
 - **Limited Geographical Scope:** The study primarily focused on Dublin and surrounding areas, potentially limiting the generalizability of its findings to other regions in Ireland.
@@ -333,3 +329,15 @@ When mapping Airbnb listings onto the SAs and grouping them by month, it was obs
 - **Data Sources:** Questions about the validity of RPPI data arose due to the use of Stamp Duty data, which may have similar limitations as the PPR data.
 
 These limitations suggest potential sources of error and challenges in data accuracy and relevance that should be considered when interpreting the study's findings and implications. Addressing these limitations could enhance the robustness of future research in this area.
+
+# Future Study Implications
+The future study implications and conclusion of the research can be summarized as follows:
+- **Extended Timeline:** Future studies should consider examining housing prices before March 2020, taking into account the impact of COVID-19 on international travel and the short-term rental market, which led to changes in available rental properties.
+- **Data Sources:** Exploring additional data sources, such as Daft.ie, which may provide more comprehensive information on properties sold, including details like bedrooms, bathrooms, and acreage, could enhance research accuracy.
+- **Third-Party Data:** Investigating third-party data providers like AirDNA as alternatives for Airbnb data collection should be considered, especially if historical data from InsideAirbnb is not accessible.
+- **GeoDirectory Access:** Applying for access to the GeoDirectory database, which may have more property information, including Building Energy Rating (BER), could be a valuable resource, albeit potentially costly.
+- **Data Analysis Techniques:** Exploring different machine learning techniques, including unsupervised learning with methods like K-Nearest Neighbour and principal component analysis, can provide flexibility in handling multicollinearity within the dataset.
+- **Multicity Analysis:** Researchers should continue to conduct similar studies in different cities to document the influence of Airbnb on property prices, as the impact may vary across locations.
+
+# Conclusion
+The research failed to provide evidence of Airbnb's influence on the Irish property market, primarily due to the low data quality associated with property sales records. Important property details such as the number of bedrooms, bathrooms, property size, and accommodation type were often missing or insufficient, making it challenging to develop a robust machine learning algorithm to fit the dataset effectively. While suggestions for improving data collection and accuracy have been made, the study did not propose specific regulatory methods for Airbnb.
