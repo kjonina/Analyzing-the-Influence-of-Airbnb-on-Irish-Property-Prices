@@ -47,18 +47,13 @@ The study will test the following hypotheses:
 2.	H1: The number of Airbnb listings has a significant effect on property prices in the Greater Dublin Area.
 This study aims to provide insights into how Airbnb impacts property prices in Ireland, particularly in the Greater Dublin Area, and whether regulatory measures are needed to address these effects on housing affordability.
 
-
-![image](https://github.com/kjonina/Analyzing-the-Influence-of-Airbnb-on-Irish-Property-Prices/assets/48295461/1ec32972-cdd5-4d55-b37d-4300530afd70)
-
-The counties in GDA. Created in Tableau Dashboard.
-
 # Methodology Summary
 #### Data Sources
 - Residential Property Price Register (PPR) – Information about property sales in Ireland.
 - Inside Airbnb – Data on Airbnb listings in Ireland.
 - Central Statistics Office (CSO) – Shapefiles for areas and Small Area Population Statistics (SAPS).
 
-#### Data Cleaning and Selection:
+#### Data Cleaning and Selection
 - Property sales data collected from PPR since January 1, 2010, and last updated on July 12, 2022.
 - Selection of properties sold between July 1, 2021, and June 30, 2022, in Greater Dublin Area (GDA): County Dublin, County Wicklow, County Kildare, County Meath, and County Louth.
 - Cleaning address column: Standardized word cases to uppercase, corrected spellings, replaced abbreviations (e.g., 'RD' to 'ROAD'), replaced Irish spellings with English equivalents.
@@ -79,26 +74,40 @@ The use of the Google Maps API facilitated the acquisition of geocoded coordinat
 - Dropped addresses geocoded outside Ireland and those outside the chosen counties (Dublin, Wicklow, Kildare, Meath, Louth).
 - Translated Irish place names to English where necessary.
 
-#### PPR Geodataframe:
+#### PPR Geodataframe
 - Merged geocoded information with the PPR dataset.
 - Converted data to a pandas geodataframe for spatial analysis.
 
-#### Country Divide:
--  Explained the various administrative divisions in Ireland, including counties, county councils, local electoral areas (LEAs), and electoral divisions (EDs).
+#### Administrative Divisions
+##### Counties
+- 26 administrative counties in the Republic of Ireland.
+- 
+##### County Councils
+- 31 local authorities in Ireland
+- 4 different councils that govern County Dublin: Dublin City Council, Dún Laoghaire–Rathdown County Council, Fingal County Council and South Dublin County Council.
+- Other relevant councils: Wicklow County Council, Kildare County Council, Meath County Council and Louth County Council.
 
-![image](https://github.com/kjonina/Analyzing-the-Influence-of-Airbnb-on-Irish-Property-Prices/assets/48295461/4d718307-f961-4b7d-bc0b-55f479a2e456)
+##### Local Electoral Areas (LEAs)
+- Counties are broken down into local electoral areas (LEAs), which are electoral areas for elections to local authorities in
+- 166 LEAs in the Republic of Ireland, which range in population and area (in square kilometres).
+- Eleven LEAs are located in the Dublin City Council
+ 
+##### Electoral Divisions (EDs).
+- LEAs are broken down into Electoral Divisions (EDs)
+- Smallest legally defined administrative areas in the Republic of Ireland.
+- 3,409 EDs in the Republic
 
-South East Inner City LEA is shown on the left, while the EDs compiling the South East Inner City LEA are shown on the right. 
+#####	Small Areas
+- Areas of population, consist of between 80 and 120 properties.
+- Developed as the lowest granular level of geography for compiling statistics.
+- SAs must be nested within EDs.
 
-![image](https://github.com/kjonina/Analyzing-the-Influence-of-Airbnb-on-Irish-Property-Prices/assets/48295461/28099aba-1049-4c3a-b94a-8420fc126b2c)
-Pembroke East A ED is shown on the left, while the SAs compiling the Pembroke East A ED are shown on the right. 
-
-#### Eircodes:
+#### Eircodes
 - Ireland has 139 Eircode routing keys.
 - Eircode shapefiles are available but may not always accurately map properties.
 - An Post assigns routing keys, and errors can occur.
 
-#### Shapefiles:
+#### Shapefiles
 - Shapefiles store geometric data and attributes.
 - Used shapefiles from the Central Statistics Office (CSO) for Local Electoral Area (LEA), Electoral Division (ED), and Small Area (SA).
 - Calculated area in square kilometers for each geographical area.
@@ -152,15 +161,8 @@ Total number of properties was provided by SAPS. New columns were developed to e
 - Some locations were initially mapped as polygons, which were converted to points using centroids.
 - The calculated distances were exported and merged with the geolocated dataset.
 
-![image](https://github.com/kjonina/Analyzing-the-Influence-of-Airbnb-on-Irish-Property-Prices/assets/48295461/2a56e263-a7b7-4a86-96be-61463746b735)
-
-Euclidian distance (purple lines) was taken from the geolocated properties (purple dots) to the nearest commercial zone (black dots). 
-
 ### Airbnb
 Airbnb data was obtained from Inside Airbnb, encompassing all listings in Ireland from 27th June 2021. Efforts to acquire additional data through applications did not yield responses. Two sets of datasets were downloaded from each quarter and combined to ensure completeness. The data includes listings, calendar data, and room types (entire property, private room, shared room, hotel rooms). Outliers were observed in Airbnb prices; one listing with an extremely high price was dropped. Calendar data provides information on availability for each listing. Data for analysis was selected for the period from 1st July 2021 to 30th June 2022. Graphs were used to visualize the number of listings over time. Some gaps in data collection were observed, but efforts were made to minimize data loss.
-
-![image](https://github.com/kjonina/Analyzing-the-Influence-of-Airbnb-on-Irish-Property-Prices/assets/48295461/2147390e-29df-4c29-b461-18ee11a5f993)
-Combining the best of all three calendar files to ensure continuation.  
 
 #### Airbnb Pandas Geodataframe
 The Airbnb data included latitude and longitude for each listing, allowing it to be converted into a pandas geodataframe. Additionally, each Airbnb listing was mapped onto shapefiles for LEAs, Eircodes, EDs, and SAs to extract corresponding values for increased accuracy.
@@ -228,35 +230,21 @@ In 2021, the top 10 garda sub-divisions with the highest crime rates were all in
 Mansion House B in Dublin City had the highest vacancy rate at nearly 20%. Other Dublin City electoral divisions with high vacancy rates included Merchants Quay and Pembroke West.
 Electoral divisions outside Dublin City, like Killeagh in County Meath and Ballinguille in County Wicklow, also had high vacancy rates at 17.2% and 18.3%, respectively.
 
-![image](https://github.com/kjonina/Analyzing-the-Influence-of-Airbnb-on-Irish-Property-Prices/assets/48295461/ec23507b-d9f8-4c5e-8e03-b0e0a5991e9d)
-
-Vacancy rate in Dublin City Centre is high in the city centre. No vacancy figures were given for Portobello ED.
-
 #### Eircodes
 In the selected counties, there were a total of 57 Eircodes, with areas ranging from 3.22 km sq. to 1509.91 km sq. Dublin had the most Eircodes (37), followed by Kildare with 10, Meath with 14, Wicklow with 8, and Louth with 2 Eircodes.
-
 Some Eircodes extended beyond the selected counties and into neighboring counties like Carlow, Wexford, Westmeath, and Offaly. This extension occurred because Eircodes are used for postal routing rather than strict geographical delineation.
-
 Initially, there was a consideration to use Eircodes to measure the number of Airbnb listings, but this approach was abandoned due to the potential inclusion of Airbnb listings from outside the selected counties, which could skew the results.
 
 (Note: The summary provides information about the number and distribution of Eircodes in the selected counties and the decision not to use Eircodes for measuring Airbnb listings.)
 
-![image](https://github.com/kjonina/Analyzing-the-Influence-of-Airbnb-on-Irish-Property-Prices/assets/48295461/206507a7-a739-409f-bcd4-41c8f2beb68f)
-
-Eircodes that are in, or partially in, County Dublin. Created in Tableau from Eircode shapefile.
-
 
 #### Local Electoral Areas
 In the selected counties, there were 56 Local Electoral Areas (LEAs) with varying areas, ranging from 4.63 km sq. to 916.21 km sq.
-
 Dublin had the most LEAs (31), followed by Kildare with 8 LEAs, Louth with 5 LEAs, Meath with 6 LEAs, and Wicklow with 6 LEAs.
 
 The Stillorgan LEA had the highest Median Property Price (MPP) at €511,507, while the Dundrum LEA had the second-highest MPP at €500,000. In contrast, Athy LEA in County Kildare had the lowest MPP at €194,000.
 
 The North Inner City LEA in Dublin had the highest number of Airbnb listings, with 811 listings, of which 46.24% were entire houses or apartments. The MPP in this LEA was €325,000. South-East Inner City LEA had 557 Airbnb listings, with over 70% being entire houses or apartments, and a MPP of €428,571.
-
-![image](https://github.com/kjonina/Analyzing-the-Influence-of-Airbnb-on-Irish-Property-Prices/assets/48295461/83396c42-1f0e-4ce6-a700-8fb574e1f534)
-LEAs coloured by the number of Airbnb Listings in each LEA. The darker the colour the more Airbnb listings are available. 
 
 Outside of Dublin, Naas LEA in County Kildare had the most property sales, with 619 sales and a MPP of €338,000, along with 54 Airbnb listings. Ladytown-Bettystown LEA in Meath and Maynooth LEA in County Kildare had 548 and 526 property sales, respectively, with MPPs of €275,000 and €348,017. Bray West LEA had the fewest property sales, with 142, and a MPP of €422,250.
 
@@ -276,9 +264,6 @@ In Dublin, Blanchardstown-Blakestown ED had the most properties sold, with 463 p
 Outside of Dublin, Naas Urban ED in County Kildare had the highest number of properties sold, with 432 properties sold and 21 Airbnb listings. Navan Rural ED in County Meath had the second-highest number of property sales, with 333 properties sold and 21 Airbnb listings.
 
 In Dublin, South Dock ED had the highest number of Airbnb listings, with over 70% being entire houses or apartments and an MPP of half a million euros. The percentage of entire houses or apartments in EDs with the highest Airbnb listings ranged from 29.41% to 72.60%, with MPP varying from €295,500 to €500,000.
-
-![image](https://github.com/kjonina/Analyzing-the-Influence-of-Airbnb-on-Irish-Property-Prices/assets/48295461/9bb9b645-bb39-4b47-86a0-db7451775a55)
-Figure shows the areas with high number of Airbnb listings in the date range selected. The darker the colour the more Airbnb listings are available.
 
 Outside of Dublin, the top three EDs with the highest number of Airbnb listings were Carlingford ED in County Louth (65 listings), Wicklow Urban ED (27 listings), and St. Mary’s ED in County Meath, and Bray No.2 ED in County Wicklow (26 listings each). Carlingford ED had 34 properties sold with an MPP of €255,000, while St. Mary’s ED had over 288 properties sold with an MPP of €277,533. Wicklow Urban ED had 91 property sales with an MPP of €299,500, and Bray No.2 ED had 66 properties sold with an MPP of €440,529.
 
