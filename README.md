@@ -10,6 +10,8 @@ Data Cleaning | Data Analysis| Exploratory Data Analysis | Data Visualization | 
 - [Problem Statement](#Problem-Statement)
 - [Methodology Summary](#Methodology-Summary)
 - [Findings](#Findings)
+- [Discussion](#Discussion)
+- [Limitations](#Limitations)
 
 # ABSTRACT
 Housing crisis is one of the most talked about social issues in Ireland.  Entire properties, as well as private rooms, available on Airbnb in highly touristic areas such as Dublin, contributes to a demand on the rental market for long term tenants and property markets for first-time buyers. Unaffordability in the property market has coincided with the increase of private short-term rentals (STRs) such as Airbnb in many cities around the world, including Dublin. In this study, we evaluated the impact of Airbnb on property prices since July 2021 in the Greater Dublin Area, where roughly 1.9 million people live, using linear regression and other machine learning algorithms. Findings suggests that the number of Airbnb listings has returned to the pre-pandemic high, while ML results were inconclusive due to the dataset chosen for this research and no recommendations could be made in relation to Airbnb.
@@ -289,3 +291,35 @@ Each of the selected counties had varying numbers of SAs, with Dublin having the
 When mapping Airbnb listings onto the SAs and grouping them by month, it was observed that not every SA had active Airbnb listings throughout the year or even had any Airbnb listings at all. Therefore, it was decided not to use Airbnb listings at the SA level due to the limited number of listings, which could make the analysis impractical.
 
 (Note: This section provides information about the distribution and characteristics of Small Areas in the selected counties, along with the decision to exclude Airbnb listings at this geographical level due to limited data.)
+
+# Discussion
+- **Null Hypothesis:** The study failed to reject the null hypothesis, indicating no significant impact of Airbnb on property prices in the selected GDA region.
+- **Limited Geographical Scope:** The study primarily focused on Dublin and surrounding areas, potentially limiting the generalizability of its findings to other regions in Ireland.
+- **Comparison to Previous Studies:** Findings were compared to previous research, which might not perfectly align with the specific context of the GDA region.
+- **Data Quality:** The study used data from various sources, including third-party data for Airbnb listings, which may not always be accurate or up-to-date.
+
+# Limitations
+**Price Property Register:**
+- **Stamp Duty Date:** The date in the Price Property Register (PPR) doesn't necessarily represent the actual sale date, potentially affecting time-series analysis.
+- **Inconsistent Formatting:** Inaccuracies in addresses, inconsistent formatting, and mixed languages in the dataset made data processing challenging.
+- **Lack of Relevant Information:** The PPR data lacked critical property information, such as the number of bedrooms, bathrooms, property size, and garden size.
+- **Missing Eircodes:** A significant portion of the properties did not have Eircodes, making geolocation less accurate.
+- **Duplication Data:** Duplicate entries and changing property prices over time were observed in the dataset.
+
+**Geocoding Process:**
+-**Inaccurate Addresses:** Some addresses only contained general area names without property-specific details, leading to inaccuracies in geolocation.
+
+**Shapefiles:**
+**Data Dictionary and Standardization:** Lack of data dictionaries and inconsistencies in location names and spellings in shapefiles created difficulties in data merging and analysis.
+
+**Tableau Dashboard:**
+- **Use of Uncleaned Data:** Some Tableau dashboards used uncleaned PPR data, potentially introducing inaccuracies into the visualizations.
+- **Inflation Rate:** Changes in property prices due to inflation were not controlled for in the study.
+- **Crime Rate:** Crime data was available for only one year and was not aligned with the study's selected dates.
+- **Vacant Data:** Vacant property data from Census 2022 was aggregated at the ED level, making it challenging to analyze at the SA level.
+- **SAPS Data:** The SAPS data used in the study was outdated by nearly seven years, potentially not reflecting property changes over time.
+
+**Residential Property Price Index (RPPI):**
+- **Data Sources:** Questions about the validity of RPPI data arose due to the use of Stamp Duty data, which may have similar limitations as the PPR data.
+
+These limitations suggest potential sources of error and challenges in data accuracy and relevance that should be considered when interpreting the study's findings and implications. Addressing these limitations could enhance the robustness of future research in this area.
