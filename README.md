@@ -1,21 +1,21 @@
 # Impact of Airbnb on Property Market in Greater Dublin Area
 Created as part of Master of Science in Data Science in South East Technological University, Ireland.
 
-### THE GOAL:
+### The Goal:
 The primary objective of this case study is to understand the impact of Airbnb on property prices in Ireland. The research aims to uncover patterns and correlations between the growth of Airbnb listings and fluctuations in the real estate market. By utilizing data analysis techniques, the goal is to provide valuable insights into how the short-term rental market may be influencing property values in Ireland.
 
 ### Review and Recommendations:
 The analysis, conducted by the project found a significant correlation between the surge in Airbnb listings and an increase in Irish property prices. The findings suggest a complex relationship between short-term rentals and the housing market. To mitigate potential negative consequences, it is recommended that policymakers consider implementing regulations that balance the growth of Airbnb with the stability of the housing market. Additionally, stakeholders in the real estate industry may benefit from adapting their strategies in response to the evolving dynamics highlighted in the study.
 
-### IMPLEMENTATION:
+### Implementation:
 The implementation phase involves translating the recommendations into actionable steps. This includes engaging with policymakers to discuss potential regulatory measures, collaborating with industry players to adapt business strategies, and fostering public awareness regarding the implications of the short-term rental market on property values. Implementation will be an iterative process, requiring ongoing collaboration and adjustments to address the evolving landscape of Airbnb and the real estate market.
 
-### INISIGHTS AND EVLOUTION:
+### Insights and Evolution:
 The insights gained from the analysis will serve as a foundation for continued monitoring and evolution of strategies. Regular updates and refinements to regulations, industry practices, and public awareness campaigns will be essential to staying ahead of the dynamic relationship between Airbnb and property prices. As the short-term rental market continues to evolve, ongoing analysis and adaptation will ensure that the measures taken remain effective in maintaining a healthy and balanced real estate environment in Ireland.
 
 In conclusion, this case study provides a comprehensive exploration of the interplay between Airbnb and Irish property prices, offering actionable recommendations for stakeholders to navigate the evolving landscape successfully. Through thoughtful implementation and continuous adaptation, the real estate market can strive for equilibrium in the face of the growing influence of short-term rentals.
 
-### Challenges Faced
+### Challenges Faced:
 - **Incomplete Property Data:** Dealing with property sales records that lacked crucial information like the number of bedrooms, bathrooms, property size, and accommodation type, making it challenging to perform comprehensive analyses.
 - **Data Quality Issues:** Struggling with data quality issues such as anomalies, inconsistencies, and inaccuracies in the Price Property Register (PPR), which raised concerns about the reliability of the dataset. Addressing the discrepancy between the stamp duty date recorded in the PPR and the actual sale date of properties, which required assumptions and could impact time series analysis.
 - **Lack of Airbnb Data Updates:** Relying on outdated Airbnb data for the study, as data updates from InsideAirbnb were not available, potentially leading to inaccuracies in assessing the impact of Airbnb on the property market.
@@ -32,7 +32,7 @@ In conclusion, this case study provides a comprehensive exploration of the inter
 - **Lack of Airbnb Updates:** Working with Airbnb data that was not updated during the study period, resulting in outdated information that may not accurately reflect recent Airbnb activity.
 - **Property Location Coordinates:** Considering that Airbnb listings are often geolocated approximately 150 meters away from the actual property, which could lead to inaccuracies in assessing their impact on the property market.
 
-- ### SKILLS GAINED
+- ### Skills Gained:
 - **Data Management Skills:** Acquired advanced skills in data management, including cleaning, preprocessing, and handling large datasets. Dealing with incomplete and inconsistent data enhanced my ability to work with real-world datasets effectively.
 - **Research Resilience:** My research journey taught me how to adapt to unexpected challenges and overcome various obstacles in the data collection and analysis process. I learned to stay persistent and resourceful in solving complex problems.
 - **Data Analysis Expertise:** developed expertise in analyzing datasets using statistical methods and machine learning techniques. This allowed me to uncover patterns, trends, and correlations within the data.
