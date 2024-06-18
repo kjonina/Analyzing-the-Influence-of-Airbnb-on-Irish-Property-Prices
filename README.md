@@ -13,10 +13,7 @@ The study incorporated a comparison of Airbnb listings with property prices, exa
 
 ## [Tableau Link](https://public.tableau.com/app/profile/karina.jonina/viz/IrelandPricePropertyRegisterMScThesis/ExaminingtheHousingPropertyPricesanditsinfluences)
 
-<img src='screenshot/animation.gif'/></a>
-
-
-
+<img src='/screenshots/animation.gif'/></a>
 
 ### Outcomes:
 The outcomes of the thesis study provided valuable insights into the complex dynamics between Airbnb activity and property prices in the GDA. Although all effort was made to remove challenges in data quality and limitations in certain datasets, the research failed to successfully contributed to the understanding of regional variations and hotspots where Airbnb may have a more pronounced impact. The geospatial visualizations and statistical findings offered a nuanced perspective on how short-term rentals relate to property markets at different geographic levels.
